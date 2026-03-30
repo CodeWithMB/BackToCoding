@@ -89,7 +89,7 @@ a{
     border-radius: 20px;
     transition: all 0.3s 0s;
 }
-.rightBox img:hover{
+.rightBox:hover{
     transform: scale(1.1);
 }
 
@@ -98,4 +98,34 @@ a{
     flex-direction: column;
     gap: 20px;
     font-size: large;
+}
+
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s 0s;
+}
+
+.rightBox .overLay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(36, 36, 34, 0.764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.rightBox .overLay:hover{
+    opacity: 1;
+    transition: all 0.3s 0s;
+}
+
+.rightBox .overLay span{
+    color: white;
+    font-size: 1.2rem;
 }
