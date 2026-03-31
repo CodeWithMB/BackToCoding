@@ -1,0 +1,188 @@
+<<<<<<< HEAD
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.container{
+    /* border: 20px solid black; */
+    height: 100vh;
+    width: 100vw;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    height: 100vh;
+}
+
+.cardContainer{
+    background-color: bisque;
+    border-radius: 18px;
+    border: 2px solid black;
+    width: 20vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 5px 10px 6px grey;
+}
+
+img{
+    height: 30vh;
+     transition: transform 0.3s ease-in-out;
+}
+img:hover{
+    transform: scale(1.1);
+    
+}
+
+.content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    padding-bottom: 10px;
+}
+
+
+=======
+#navList{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+.container{
+    /* height: 100vh; */
+    width: 100vw;
+    overflow-x: none;
+    background-image: linear-gradient(98deg, #e2e5e8 0%, #ffffff 100% );
+}
+
+#navList{
+    width: 100%;
+    margin-left: 45px;
+    margin-right: 20px;
+    font-size: 2.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items : center;
+}
+nav{
+    width: 100%;
+}
+
+.navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    /* background-image: linear-gradient( 126.6deg,  rgba(44,115,210,1) 3.4%, rgba(251,234,255,1) 127.9% );
+     */
+    background-image: linear-gradient( 109.6deg,  rgba(34,211,238,1) 11.2%, rgba(79,57,246,1) 100.2% );
+    min-height: 80px;
+}
+
+#brandName{
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+#rightNav{
+    display: flex;
+    gap: 50px;
+}
+
+.footer{
+    background-image: linear-gradient( 109.6deg,  rgba(34,211,238,1) 11.2%, rgba(79,57,246,1) 100.2% );
+    width: 100%;
+    text-align: center;
+}
+
+.contentBox{
+    width: 70%;
+    margin: auto;
+    padding-top: 12px;
+    /* border: 2px solid black; */
+    border-radius: 12.5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    box-shadow: 0px 0px 30px black;
+}
+
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.rightBox, img{
+    height: 350px;
+    border-radius: 20px;
+    transition: all 0.3s 0s;
+}
+.rightBox:hover{
+    transform: scale(1.1);
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: large;
+}
+
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s 0s;
+}
+
+.rightBox .overLay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(36, 36, 34, 0.764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.rightBox .overLay:hover{
+    opacity: 1;
+    transition: all 0.3s 0s;
+}
+
+.rightBox .overLay span{
+    color: white;
+    font-size: 1.2rem;
+}
+>>>>>>> 56ecca738ae41d0d95f8d063e77b7139c378c377
