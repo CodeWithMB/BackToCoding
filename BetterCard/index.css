@@ -14,10 +14,12 @@
 }
 
 .card{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 80vh;
     width: 30vw;
    background-color: white;
+   border-radius: 22px;
+   box-shadow: 0px 0px 32px rgba(50, 50, 50, 0.997);
 }
 
 .content{
@@ -28,36 +30,64 @@
     align-items: center;
 }
 
-img{
-    width: 100%;
-    height: 100%;
+.hero-img{
+    width: 98%;
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 .plan{
     display: flex;
-    height: 5%;
+    align-items: center;
+    gap: 12px;
+
+    
     width: 100%;
     border: 2px solid black;
-    display: flex;
-    align-items: center;
+    
     padding-right: 20px;
     padding-left: 15px;
     border-radius: 15px;
+    /* align-self: flex-start; */
 }
 
 .plan img{
-    height: 100%;
-    width: 23%;
+    height: 50px;
+    width: auto;
 }
 
 .payment{
     width: 100%;
     border: 2px solid black;
+    border-radius: 15px;
     padding: 9px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: darkblue;
-    box-shadow: 0 30px 15px rgba(42, 41, 41, 0.836);
+    box-shadow: 0 20px 32px rgba(42, 41, 41, 0.836);
     color: white;
+}
+
+.text-rate{
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-price{
+    color: grey;
+    font-size: 14px;
+}
+
+.change{
+    margin-left: auto;
+}
+
+button{
+    font-size: large;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: none;
 }
