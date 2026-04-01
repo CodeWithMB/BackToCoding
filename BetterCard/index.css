@@ -10,19 +10,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: burlywood;
 }
 
 .card{
     border: 2px solid black;
     height: 80vh;
     width: 30vw;
-   
+   background-color: white;
 }
 
 .content{
     padding: 30px;
   display: flex;
-    gap: 30px;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
 }
@@ -30,4 +31,33 @@
 img{
     width: 100%;
     height: 100%;
+}
+
+.plan{
+    display: flex;
+    height: 5%;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 15px;
+    border-radius: 15px;
+}
+
+.plan img{
+    height: 100%;
+    width: 23%;
+}
+
+.payment{
+    width: 100%;
+    border: 2px solid black;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    box-shadow: 0 30px 15px rgba(42, 41, 41, 0.836);
+    color: white;
 }
