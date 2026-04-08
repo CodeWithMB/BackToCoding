@@ -4,3 +4,13 @@
     box-sizing: border-box;
 }
 
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer{
+     border: 2px solid black;
+}
