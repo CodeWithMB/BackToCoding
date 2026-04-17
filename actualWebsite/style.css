@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: auto;
+}
+
+.container{
+    max-width: 90vw;
+    height: auto;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+a{
+    text-decoration:none;
+    
+}
