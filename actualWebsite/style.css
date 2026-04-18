@@ -15,9 +15,20 @@ body{
     padding: 2rem 1rem;
     margin: 0 auto;
     background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+
 
 a{
     text-decoration:none;
-    
 }
