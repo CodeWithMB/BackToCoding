@@ -43,4 +43,22 @@ a{
 .cardTitleContainer {
     padding-left: 10px;
 }
+.authorAvatarContainer{
+    flex-shrink: 0;
+}
 
+.authonContainer{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.authorAvatarContainer img{
+    width:40px;
+    height:40px;
+}
+
+.authorInfo{
+    display: flex;
+    flex-direction: column;
+}
