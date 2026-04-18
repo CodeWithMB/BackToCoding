@@ -27,8 +27,20 @@ body{
     padding-bottom: 30px;
 }
 
-
-
 a{
     text-decoration:none;
 }
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    height: auto;
+    width: 306px;
+}
+
+.cardTitleContainer {
+    padding-left: 10px;
+}
+
