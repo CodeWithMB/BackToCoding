@@ -62,3 +62,13 @@ a{
     display: flex;
     flex-direction: column;
 }
+
+.tag-btn{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: none;
+}
