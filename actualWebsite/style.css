@@ -89,3 +89,9 @@ a{
     padding: 0 12px 12px 12px;
     width: 100%;
 }
+
+.cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
