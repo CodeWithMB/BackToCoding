@@ -14,18 +14,10 @@ function App() {
         <h1 className='text-4xl font-bold text-center mb-10 w-screen '>My Todos</h1>
 
         <div className='credentials flex justify-end gap-5 absolute right-0'>
-            <h2 className='text-3xl font-bold '>Login</h2>
-            <h2 className='text-3xl font-bold'>Sign UP</h2>
+            <button className='text-2xl font-bold bg-amber-50 text-black p-2 pl-8 pr-8 rounded-3xl'>Log in</button>
+            <button className='text-2xl font-bold border  p-2 pl-8 pr-8 rounded-3xl hover:bg-gray-500/40 border-gray-400'>Sign up for free</button>
         </div>
-
       </div>
-      
-
-        
-      
-
-      
-      
 
       <div className="flex gap-3">
           <input value={input} onChange={(e) => setInput(e.target.value)} type="text" placeholder='What needs to be done?' className="flex-1 bg-gray-900 border border-gray-700 rounded-xl px-5 py-4" />
