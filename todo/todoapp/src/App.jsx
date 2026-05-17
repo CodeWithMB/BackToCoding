@@ -2,10 +2,12 @@ import { useState } from 'react'
 
 
 function App() {
-  const [input, setInput] = useState();
-
+  const [input, setInput] = useState("");
+  const [tasks, setTasks] = useState([]);
   function addTodo(){
-    console.log("Add your tasks: ");
+    // console.log(input);
+    setTasks([...tasks, input])
+    setInput("")
   }
   return (
     <div className='bg-black min-h-screen p-4 text-white'>
@@ -23,6 +25,14 @@ function App() {
           <input value={input} onChange={(e) => setInput(e.target.value)} type="text" placeholder='What needs to be done?' className="flex-1 bg-gray-900 border border-gray-700 rounded-xl px-5 py-4" />
           <button className="bg-blue-600 hover:bg-blue-700 px-8 text-lg rounded-xl" onClick={addTodo}>Add</button>
       </div>
+
+      <div className="mt-6">
+          {tasks.map((task, index) => (
+            <div key={index} className="bg-gray-900 p-4 rounded-xl mb-3 w-1/3 ">
+              {task}
+        </div>
+          ))}
+        </div>
       
     </div>
   )
