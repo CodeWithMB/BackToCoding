@@ -3,8 +3,31 @@ import { useState } from "react";
 function App() {
   const [input, setInput] = useState("");
   const [tasks, setTasks] = useState([]);
+  const [error, setError] = useState("")
+  const [fade, setFade] = useState(false)
+
+  
   function addTodo() {
     // console.log(input);
+    if(input.trim() === "") {
+
+  //  setError("Hey try add some tasks first")
+  setTimeout(()=>{
+   setError("Hey try add some tasks first")
+},10)
+
+   setFade(false)
+
+   setTimeout(()=>{
+      setFade(true)
+   },2500)
+
+   setTimeout(()=>{
+      setError("")
+   },3000)
+
+   return
+}
     setTasks([...tasks, input]);
     setInput("");
   }
@@ -14,6 +37,8 @@ function App() {
         <h1 className="text-4xl font-bold text-center mb-10 w-screen ">
           My Todos
         </h1>
+
+        
 
         <div className="credentials flex justify-end gap-5 absolute right-0">
           <button className="text-md font-bold bg-amber-50 text-black p-2 pl-6 pr-6 cursor-pointer rounded-3xl">
@@ -44,9 +69,18 @@ function App() {
           Add
         </button>
       </div>
+      
 
+      <p className={`
+text-red-500 text-center
+transition-opacity duration-500
+${fade ? "opacity-0" : "opacity-100"}
+`}>
+   {error}
+</p>
+      
+      {/* Entered Tasks */}
       <div className="mt-6 ">
-        
         {tasks.map((task, index) => (
           <div key={index} className="bg-gray-900 p-4 rounded-xl mb-3 w-1/3 flex justify-between items-center">
             {task}
