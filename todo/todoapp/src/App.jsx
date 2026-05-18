@@ -38,7 +38,7 @@ function App() {
           className="flex-1 bg-gray-900 border border-gray-700 rounded-xl px-5 py-4"
         />
         <button
-          className="bg-blue-600 hover:bg-blue-700 px-8 text-lg rounded-xl"
+          className="bg-blue-600 hover:bg-blue-700 px-8 text-lg rounded-xl cursor-pointer"
           onClick={addTodo}
         >
           Add
