@@ -89,7 +89,7 @@ ${fade ? "opacity-0" : "opacity-100"}
       <div className="mt-6 ">
           {
               (tasks.length > 0 && 
-                <h1 className="flex justify-center w-1/3 text-2xl font-bold pb-5">Todo Tasks</h1>
+                <h1 className="flex justify-center w-1/3 text-2xl font-bold pb-5">Tasks needs to be done</h1>
               )
             }
         
